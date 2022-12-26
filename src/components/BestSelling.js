@@ -1,12 +1,14 @@
 import React from "react";
 import './BestSelling.css'
+import LeftButtonLogo from "./icon/LeftButtonLogo";
+import RightButtonLogo from "./icon/RigthButtonLogo";
 
 function BestSelling() {
     return (
         <div className="Bestselling">
             <h2>Bestselling books</h2>
             <div className="BestBooks">
-                <button className="left"> L </button>
+                <span className="lef"t> <LeftButtonLogo/> </span>
                 <div className="books">
                     <div className="book1">
                         <h3>What I Learned from the Trees</h3>
@@ -30,7 +32,7 @@ function BestSelling() {
                         <button>Order</button>
                     </div>
                 </div>
-                <button className="right"> R </button>
+                <span className="right"><RightButtonLogo/>  </span>
             </div>
         </div>
     )

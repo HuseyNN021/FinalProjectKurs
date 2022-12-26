@@ -7,6 +7,7 @@ import './Home.css'
 import Main1 from "./Main1";
 import Sign from "./Sign";
 import BestSelling from "./BestSelling";
+import Project from "./showBook";
 
 function Home() {
     return (
@@ -24,6 +25,7 @@ function Home() {
                     <BestSelling />
                 </div>
             </div>
+            <Project/>
         </>
     )
 }

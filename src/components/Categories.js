@@ -1,6 +1,7 @@
 import React from "react";
 import './Categories.css'
 import SebetLogo from "./icon/Sebet";
+import CategorieLogo from "./icon/CategorieLogo";
 
 function Categories() {
     return (
@@ -8,30 +9,33 @@ function Categories() {
             <div className="categories-1">
                 <div className="categories-1-select">
                     <label>Shop  by category</label>
-                    <select>
+                    {/* <select>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
-                    </select>
+                    </select> */}
+                    <span><CategorieLogo/></span>
                 </div>
                 <p>Coming soon</p>
             </div>
             <div className="categories-2">
                 <div className="categories-2-language">
                     <label>English</label>
-                    <select>
+                    {/* <select>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
-                    </select>
+                    </select> */}
+                    <span><CategorieLogo/></span>
                 </div>
                 <div className="categories-2-money">
                     <label>$USD</label>
-                    <select>
+                    {/* <select>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
-                    </select>
+                    </select> */}
+                    <span><CategorieLogo/></span>
                 </div>
                 <div className="categories-3">
                     <span>USD$0.00</span>

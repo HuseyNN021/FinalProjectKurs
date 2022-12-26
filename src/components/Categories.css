@@ -23,6 +23,8 @@
 }
 .categories-1>div{
     margin: 0px 20px;
+    display: flex;
+    align-items: center;
 }
 .categories-2>div{
     margin-left: 20px;
