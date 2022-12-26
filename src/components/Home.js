@@ -24,8 +24,9 @@ function Home() {
                     </div>
                     <BestSelling />
                 </div>
+                <Project/>
             </div>
-            <Project/>
+           
         </>
     )
 }

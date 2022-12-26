@@ -1,9 +1,10 @@
 import React from 'react';
-import { useState } from 'react';
-import { book } from './services/db';
-
+import ListBook from './ListBook';
 function Project(){
-    const result=  book()
-    console.log(result);
+    return(
+        <div className='Project'>
+            <ListBook/>
+        </div>
+    )
 }
 export default Project
