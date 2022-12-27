@@ -1,9 +1,9 @@
 import React from 'react';
 import ListBook from './ListBook';
-function Project(){
+function Project({listBook,setListBook}){
     return(
         <div className='Project'>
-            <ListBook/>
+            <ListBook listBook={listBook} setListBook={setListBook}/>
         </div>
     )
 }

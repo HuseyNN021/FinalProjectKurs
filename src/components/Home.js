@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Aside from "./Aside";
 import Categories from "./Categories";
 import Header from "./Header";
@@ -10,10 +10,11 @@ import BestSelling from "./BestSelling";
 import Project from "./showBook";
 
 function Home() {
+    let [listBook,setListBook]=useState([])
     return (
         <>
             <Header />
-            <Input />
+            <Input listBook={listBook} setListBook={setListBook}/>
             <Categories />
             <div className="main">
                 <Aside />
@@ -24,7 +25,7 @@ function Home() {
                     </div>
                     <BestSelling />
                 </div>
-                <Project/>
+                <Project listBook={listBook} setListBook={setListBook}/>
             </div>
            
         </>
