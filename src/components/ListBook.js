@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  {React, useState, useEffect } from "react";
 import { BookUrl } from '../services/db'
 import axios from "axios";
 function ListBook({listBook,setListBook}) {
@@ -11,7 +11,10 @@ function ListBook({listBook,setListBook}) {
             setBooks(res.data.items)
         }).catch(err => console.log(err))
     }, [])
-
+    listBook?.map((book)=>{
+        const h=book.volumeInfo.imageLinks;
+        console.log(h);
+    })
    
     return (
         <div className="listShow">
@@ -19,8 +22,8 @@ function ListBook({listBook,setListBook}) {
             {listBook?.map((book) => {
                 return (
                     <div>
-                        <h2>{book.volumeInfo.title}</h2>
-                        <img src={book.volumeInfo.imageLinks.thumbnail} alt="alt"></img>
+                        <h3>{book.volumeInfo.title}</h3>
+                        {/* <img src={book.volumeInfo.imageLinks} alt="alt"></img> */}
                     </div>
                 )
 

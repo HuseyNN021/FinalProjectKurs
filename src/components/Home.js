@@ -6,11 +6,13 @@ import Input from "./Input";
 import './Home.css'
 import Main1 from "./Main1";
 import Sign from "./Sign";
-import BestSelling from "./BestSelling";
-import Project from "./showBook";
+import Example from './BestSelling'
+import ListBook from './ListBook'
+// import Project from "./showBook";
 
 function Home() {
     let [listBook,setListBook]=useState([])
+    console.log(listBook);
     return (
         <>
             <Header />
@@ -19,13 +21,14 @@ function Home() {
             <div className="main">
                 <Aside />
                 <div className="main1">
-                    <div className="main2">
+                    {/* <div className="main2">
                         <Main1 />
                         <Sign />
-                    </div>
-                    <BestSelling />
+                    </div> */}
+                    <Example />
                 </div>
-                <Project listBook={listBook} setListBook={setListBook}/>
+                <ListBook listBook={listBook} setListBook={setListBook}/>
+                {/* <ListBook listBook={listBook} setListBook={setListBook}/> */}
             </div>
            
         </>

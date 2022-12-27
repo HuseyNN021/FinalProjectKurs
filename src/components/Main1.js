@@ -9,14 +9,14 @@ function Main1(){
        <div className='main3'>
                     <img className='mainImage1' src={logo1}></img>
 
-        <div className='res'>
+        {/* <div className='res'> */}
             {/* <img className='mainImage2' src={logo2}></img>
             <img className='mainImage3' src={logo3}></img>
             <img className='mainImage3' src={logo3}></img>
             <img className='mainImage3' src={logo3}></img>
             <img className='mainImage3' src={logo3}></img> */}
             {/* <p>image</p> */}
-        </div>
+        {/* </div> */}
            
        </div>
     )
