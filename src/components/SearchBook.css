@@ -1,0 +1,29 @@
+.listShow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.SearchListBook {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid chocolate;
+    width: max-content;
+    background-color: khaki;
+}
+.SearchListBook>img{
+    border-radius: 7px;
+}
+
+.bookShowInfo {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bookShowInfo>h3 {
+    width: 250px;
+    height: 60px;
+}
