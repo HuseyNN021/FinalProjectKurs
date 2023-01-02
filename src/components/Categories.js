@@ -5,7 +5,7 @@ import SebetLogo from "./icon/Sebet";
 function Categories({search,setSearch}) {
     let [select,setSelect]=useState('')
     function getSelectData(e){
-        setSelect(e.target.value)
+        setSelect(e.target.value.Whis)
         setSearch(e.target.value)
     }
     console.log(search);

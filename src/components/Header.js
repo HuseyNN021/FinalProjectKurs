@@ -1,19 +1,62 @@
 import React from "react";
 import './Header.css'
 import IconHome from "./icon/HomeLogo";
+import { Link } from "react-router-dom";
 
-function Header(){
-    return(
+function Header() {
+    return (
         <header>
             <div className="header-1">
-                <span><IconHome/></span>
-                <span>Contact</span>
-                <span>Help</span>
+                <span>
+                    <Link to='/' style={{
+                        textDecoration: 'none',
+                        color: '#550D0E'
+                    }}>
+                        <IconHome />
+                    </Link>
+                </span>
+                <span>
+                    <Link to='/Contact' style={{
+                        textDecoration: 'none',
+                        color: '#550D0E'
+                    }}>
+                        Contact
+                    </Link>
+                </span>
+                <span>
+                    <Link to='/Help' style={{
+                        textDecoration: 'none',
+                        color: '#550D0E'
+                    }}>
+                        Help
+                    </Link>
+                </span>
             </div>
             <div className="header-2">
-                <span>Whislist</span>
-                <span>My orders</span>
-                <span>Sign in/Sign up</span>
+                <span >
+                    <Link to='/Whislist' style={{
+                        textDecoration: 'none',
+                        color: '#550D0E'
+                    }}>
+                        Whislist
+                    </Link>
+                </span>
+                <span>
+                    <Link to='/MyOrder' style={{
+                        textDecoration: 'none',
+                        color: '#550D0E'
+                    }}>
+                        My orders
+                    </Link>
+                </span>
+                <span>
+                    <Link to='/SignUp' style={{
+                        textDecoration: 'none',
+                        color: '#550D0E',
+                    }}>
+                        Sign in/Sign up
+                    </Link>
+                </span>
             </div>
         </header>
     )
