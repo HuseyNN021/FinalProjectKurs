@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Header() {
     return (
         <header>
-            <div className="header-1">
+            <div className="header_1">
                 <span>
                     <Link to='/' style={{
                         textDecoration: 'none',
@@ -32,7 +32,7 @@ function Header() {
                     </Link>
                 </span>
             </div>
-            <div className="header-2">
+            <div className="header_2">
                 <span >
                     <Link to='/Whislist' style={{
                         textDecoration: 'none',
@@ -46,7 +46,7 @@ function Header() {
                         textDecoration: 'none',
                         color: '#550D0E'
                     }}>
-                        My orders
+                        MyOrders
                     </Link>
                 </span>
                 <span>
@@ -54,7 +54,7 @@ function Header() {
                         textDecoration: 'none',
                         color: '#550D0E',
                     }}>
-                        Sign in/Sign up
+                        Sign 
                     </Link>
                 </span>
             </div>

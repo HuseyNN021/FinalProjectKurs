@@ -1,0 +1,37 @@
+.MoreInfo2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+.MoreInfo_Img{
+    display: flex;
+    align-items: center;
+}
+.MoreInfo_Img>img{
+    border-radius: 7px;
+    box-shadow: 0px 0px 20px 0px;
+    margin-right: 10px;
+}
+.description{
+    width: 50vw;
+}
+.MoreInfoDescription{
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 7px;
+
+}
+.MoreInfo{
+    width: 100vw;
+    height: 100vw;
+}
+@media (max-width: 500px) {
+    .MoreInfo_Img{
+        display: flex;
+        flex-direction: column;
+    }
+    .MoreInfo_Img>img{
+        margin-bottom: 10px;
+    }
+}

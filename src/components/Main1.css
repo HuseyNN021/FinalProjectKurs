@@ -2,5 +2,12 @@
 .main3>img {
     width: 613px;
     height: 186px;
-    margin-right: 30px;
+    /* margin-right: 30px; */
+}
+
+@media (max-width: 500px){
+    .main3>img{
+        width: 100vw;
+        margin: 10px 0px;
+    }
 }

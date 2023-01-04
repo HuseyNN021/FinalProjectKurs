@@ -19,7 +19,7 @@ function BooksCarusel() {
             items: 2
         },
         mobile: {
-            breakpoint: { max: 464, min: 0 },
+            breakpoint: { max: 500, min: 0 },
             items: 1
         }
     };
@@ -59,7 +59,7 @@ function BooksCarusel() {
                     <img src="https://1k-cdn.com/k/resimler/kitaplar/302707_850fe_1576171222.jpg" alt="carusel"></img>
                 </div>
 
-            </Carousel>;
+            </Carousel>
         </div>
     )
 }

@@ -1,18 +1,23 @@
 .main1{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100vw;
 }
 .main{
     display: flex;
     justify-content: space-between;
+    width: 100vw;
 }
 .main2{
     display: flex;
     justify-content: space-around;
+    /* width: 100vw; */
 }
-@media (max-width: 400px) {
-    body{
-        width: 100vw;
+@media (max-width: 500px) {
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
     }
     .main2{
         display: flex;

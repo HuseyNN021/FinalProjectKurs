@@ -10,3 +10,11 @@
 .carusel{
     width:700px;
 }
+@media (max-width: 500px){
+    .carusel{
+        width: 100vw;
+    }
+    .carusel_Book>img{
+        margin-left: 150px;
+    }
+}

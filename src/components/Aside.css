@@ -37,3 +37,11 @@ ul{
     align-items: center;
     margin-right: 25px;
 }
+@media (max-width: 500px){
+    aside{
+        width: 100vw;
+    }
+    .AsideImg{
+        display: flex;
+    }
+}

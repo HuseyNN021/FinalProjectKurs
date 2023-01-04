@@ -23,3 +23,8 @@ form{
 .label-div{
     display: flex;
 }
+@media (max-width: 500px){
+    form{
+        width: 100vw;
+    }
+}

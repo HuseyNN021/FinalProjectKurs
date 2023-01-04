@@ -1,6 +1,4 @@
 
-
-
 .categories{
     display: flex;
     align-items: center;
@@ -13,6 +11,7 @@
     text-align: center;
     letter-spacing: -0.045em;
     color: #550D0E;
+    width: 100vw;
 }
 .categories-1{
     display: flex;
@@ -68,4 +67,10 @@
     text-align: center;
     letter-spacing: -0.045em;
     color: #550D0E;
+}
+@media (max-width: 500px){
+    .categories{
+        display: flex;
+        flex-direction: column;
+    }
 }
