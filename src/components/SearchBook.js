@@ -4,7 +4,7 @@ import axios from "axios";
 import './SearchBook.css'
 import { Link } from "react-router-dom";
 
-function ListBook({ listBook, setListBook }) {
+function ListBook({ listBook, setListBook,qiymet,setQiymet }) {
     const [books, setBooks] = useState([])
     console.log(listBook);
 
@@ -14,6 +14,10 @@ function ListBook({ listBook, setListBook }) {
             setBooks(res.data.items)
         }).catch(err => console.log(err))
     }, [])
+    function addBasket(){
+        qiymet=qiymet+20;
+        setQiymet(qiymet)
+    }
 
 
     return (
@@ -28,6 +32,7 @@ function ListBook({ listBook, setListBook }) {
                             <Link to='/MoreInfo' state={listBook}>
                                 <button className="MoreInfoBook">More Info</button>
                             </Link>
+                            <button className="MoreInfoBook" onClick={addBasket}>Add Basket</button>
                         </div>
                     </div>
                 )

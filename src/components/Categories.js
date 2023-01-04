@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import './Categories.css'
 import SebetLogo from "./icon/Sebet";
 
-function Categories({search,setSearch}) {
-    let [select,setSelect]=useState('')
-    function getSelectData(e){
+function Categories({ search, setSearch, qiymet, setQiymet }) {
+    let [select, setSelect] = useState('')
+    function getSelectData(e) {
         setSelect(e.target.value.Whis)
         setSearch(e.target.value)
     }
@@ -26,7 +27,7 @@ function Categories({search,setSearch}) {
             </div>
             <div className="categories-2">
                 <div className="categories-2-language">
-                    <select>
+                    <select onClick={getSelectData}>
                         <option>English</option>
                         <option>Russian</option>
                         <option>Spanish</option>
@@ -41,9 +42,10 @@ function Categories({search,setSearch}) {
                     </select>
                 </div>
                 <div className="categories-3">
-                    <span>USD$0.00</span>
-                    <span>0</span>
-                    <span><SebetLogo /></span>
+                    <span>USD ${qiymet}.00 </span>
+                    <Link to='/MyOrder' >
+                        <span><SebetLogo /></span>
+                    </Link>
                 </div>
             </div>
         </div>

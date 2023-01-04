@@ -33,6 +33,10 @@
         grid-template-columns: 1fr;
     }
     .SearchListBook{
-        width: 100vw;
+        width: 70vw;
     }
+    .bookShowInfo>h3{
+        width: 200px;
+    }
+    
 }

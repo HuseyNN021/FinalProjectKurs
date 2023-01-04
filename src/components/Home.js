@@ -12,13 +12,14 @@ import BooksCarusel from "./BooksCarusel";
 function Home() {
     let [listBook, setListBook] = useState([])
     let [search, setSearch] = useState('')
+    let [qiymet,setQiymet]=useState(0)
 
     console.log(listBook);
     return (
         <>
             <Header />
             <Input listBook={listBook} setListBook={setListBook} search={search} setSearch={setSearch} />
-            <Categories search={search} setSearch={setSearch} />
+            <Categories qiymet={qiymet} setQiymet={setQiymet} search={search} setSearch={setSearch} />
             <div className="main">
                 <Aside />
                 <div className="main1">
@@ -27,7 +28,7 @@ function Home() {
                         <Sign />
                     </div>
                     <BooksCarusel />
-                    <ListBook listBook={listBook} setListBook={setListBook} />
+                    <ListBook listBook={listBook} setListBook={setListBook} qiymet={qiymet} setQiymet={setQiymet}/>
                 </div>
 
             </div>

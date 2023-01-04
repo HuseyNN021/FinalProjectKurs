@@ -16,7 +16,8 @@ span{
     margin: 15px;
 }
 @media (max-width: 500px) {
-    .header_1{
+    header{
         display: flex;
+        flex-direction: column;
     }  
 }

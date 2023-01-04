@@ -21,7 +21,7 @@ function MoreInfo() {
                                 <img src={item.volumeInfo.imageLinks?.thumbnail} alt={item.volumeInfo.title}></img>
                                 <div className="MoreInfoDescription">
                                     <p><b>Authors: </b>{item.volumeInfo.authors}</p>
-                                    <p><b>Categories: </b>{item.volumeInfo.categories[0]}</p>
+                                    <p><b>Categories: </b>{item.volumeInfo.categories}</p>
                                     <p className="description"><b>Description: </b>{item.volumeInfo.description}</p>
                                 </div>
                             </div>

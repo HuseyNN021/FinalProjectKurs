@@ -19,7 +19,7 @@ function BooksCarusel() {
             items: 2
         },
         mobile: {
-            breakpoint: { max: 500, min: 0 },
+            breakpoint: { max: 501, min: 0 },
             items: 1
         }
     };

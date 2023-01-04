@@ -3,9 +3,12 @@ import SignLogo from "./icon/SignLogo";
 import './Sign.css'
 
 function Sign(){
+    function getSignSub(e){
+        e.preventDefault()
+    }
     return(
         <div className="sign">
-            <form>
+            <form onSubmit={getSignSub}>
                 <label>
                     <div className="label-div">
                         <span><SignLogo/></span>
